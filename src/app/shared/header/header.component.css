@@ -1,0 +1,9 @@
+header {
+    background-image: url('../../../assets/img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat; /* Opcional: Configura según tus necesidades */
+    background-size: cover;
+    height: 60vh;
+  }
+
+  
