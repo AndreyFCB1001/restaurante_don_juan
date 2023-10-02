@@ -23,6 +23,11 @@
               <tbody>
                 <!--Lista de iconos de menú-->
                 <tr>
+                  <!--------------home---------------->
+                  <td class="text-white text-center">
+                    <fa-icon [icon]="faCoffee" class="fa-2x text rgba(215,164,132,255) "></fa-icon>
+                  </td>
+                  <!-------------------------------------->
                   <td class="text-white text-center">
                       <fa-icon [icon]="faCoffee" class="fa-2x text-orange-500 "></fa-icon>
                   </td>
@@ -46,19 +51,22 @@
                 <!--Lista de menú texto-->
                 <tr>
                   <td class="text-white text-center px-4">
+                    <a href="#" class="block py-2 text-sm font-medium">Home</a>
+                  </td>
+                  <td class="text-white text-center px-4">
                     <a href="#" class="block py-2 text-sm font-medium">Platos Fuertes</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Bebidas</a>
+                    <a  href="/drinks" class="block py-2 text-sm font-medium">Bebidas</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
                     <a href="#" class="block py-2 text-sm font-medium">Comidas Rapidas</a>
                   </td>
   
-                  <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Creeps y Waffles</a>
+                  <td class=" text-white text-center px-4">  <!--routerLink="/drinks"-->
+                    <a href="/CreepsyWaffles" class="block py-2 text-sm font-medium">Creeps y Waffles</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
@@ -75,11 +83,12 @@
     <!--Menu lateral de pantalla pequeña-->
     <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" class=" text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Platos Fuertes</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Bebidas</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Comidas Rapidas</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Creeps y Waffles</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Adicionales</a>
+        <a href="/"         class=" text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="/drinks"         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Platos Fuertes</a>
+        <a href="/drinks"         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Bebidas</a>
+        <a href="#"               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Comidas Rapidas</a>
+        <a href="/CreepsyWaffles" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Creeps y Waffles</a>
+        <a href="#"               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Adicionales</a>
       </div>
     </div>
   </nav>
