@@ -11,6 +11,7 @@ import { DrinksComponent } from './app/menu/drinks/drinks.component';
 import { FastFoodsComponent } from './app/menu/fast-foods/fast-foods.component';
 import { CrepesWafflesComponent } from './app/menu/crepes-waffles/crepes-waffles.component';
 import { AdditionalDishesComponent } from './app/menu/additional-dishes/additional-dishes.component';
+import { HomeComponent } from './app/menu/home/home.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { AdditionalDishesComponent } from './app/menu/additional-dishes/addition
     FastFoodsComponent,
     CrepesWafflesComponent,
     AdditionalDishesComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

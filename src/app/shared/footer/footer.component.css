@@ -1,0 +1,13 @@
+.foter{
+    margin: 10px;
+    background-color: rgb(244, 154, 19);
+}
+.cota{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+text-align: center;
+padding-top: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
