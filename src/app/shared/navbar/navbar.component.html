@@ -1,17 +1,24 @@
 <nav class="sm:h-28">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <<!--Botón de pantalla pequeña-->
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden ">
+            <!--Botón de pantalla pequeña-->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <!--ICON Login-->
           <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-             
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
             </svg>
           </button>
         </div>
@@ -23,6 +30,11 @@
               <tbody>
                 <!--Lista de iconos de menú-->
                 <tr>
+                  <!--------------home---------------->
+                  <td class="text-white text-center">
+                    <fa-icon [icon]="faCoffee" class="fa-2x text rgba(215,164,132,255) "></fa-icon>
+                  </td>
+                  <!-------------------------------------->
                   <td class="text-white text-center">
                       <fa-icon [icon]="faCoffee" class="fa-2x text-orange-500 "></fa-icon>
                   </td>
@@ -46,23 +58,26 @@
                 <!--Lista de menú texto-->
                 <tr>
                   <td class="text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Platos Fuertes</a>
+                    <a href="/homess" class="block py-2 text-sm font-medium">Home</a>
+                  </td>
+                  <td class="text-white text-center px-4">
+                    <a href="/PlatosPrincipales" class="block py-2 text-sm font-medium">Platos Fuertes</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Bebidas</a>
+                    <a  href="/drinks" class="block py-2 text-sm font-medium">Bebidas</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Comidas Rapidas</a>
+                    <a href="/Fasfod" class="block py-2 text-sm font-medium">Comidas Rapidas</a>
+                  </td>
+  
+                  <td class=" text-white text-center px-4">  <!--routerLink="/drinks"-->
+                    <a href="/CreepsyWaffles" class="block py-2 text-sm font-medium">Creeps y Waffles</a>
                   </td>
   
                   <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Creeps y Waffles</a>
-                  </td>
-  
-                  <td class=" text-white text-center px-4">
-                    <a href="#" class="block py-2 text-sm font-medium">Adicionales</a>
+                    <a href="/Adicionales" class="block py-2 text-sm font-medium">Adicionales</a>
                   </td>
                 </tr>
               </tbody>
@@ -75,11 +90,12 @@
     <!--Menu lateral de pantalla pequeña-->
     <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#" class=" text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Platos Fuertes</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Bebidas</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Comidas Rapidas</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Creeps y Waffles</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Adicionales</a>
+        <a href="/homess"         class=" text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="/PlatosPrincipales"         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Platos Fuertes</a>
+        <a href="/drinks"         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Bebidas</a>
+        <a href="/Fasfod"               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Comidas Rapidas</a>
+        <a href="/CreepsyWaffles" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Creeps y Waffles</a>
+        <a href="#"               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Adicionales</a>
       </div>
     </div>
   </nav>
