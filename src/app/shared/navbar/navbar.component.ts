@@ -14,4 +14,10 @@ export class NavbarComponent {
   faChampagneGlasses = faChampagneGlasses;
   faBurger = faBurger;
 
+  isMobileMenuOpen: boolean = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
 }
